@@ -220,51 +220,59 @@ export default function Customer_Master() {
                     <Modal.Title>Edit Customer</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <div className="col-md-6">
+                   
                         <form onSubmit={onModalFormSubmit} className="form-group">
-                            <div className="field">
+                            <div className="row">
+                            <div className="field col-md-6">
                                 <label className="required">ID</label>
                                 <input defaultValue={modalCustomer.id} onChange={onModalInputChange} className="form-control mt-1" name="id" type="text" required/>
                             </div>
-                            <div className="field">
+                            <div className="field col-md-6">
                                 <label className="required">Name</label>
                                 <input defaultValue={modalCustomer.name} onChange={onModalInputChange} className="form-control mt-1" name="name" type="text" required  pattern="[a-zA-Z]*" title="Please enter Alphabets."/>
                             </div>
-                            <div className="field">
+                            </div>
+                            <div className="row">
+                            <div className="field col-md-6">
                                 <label className="required">Address</label>
                                 {/* <input defaultValue={modalCustomer.address} onChange={onModalInputChange} className="form-control" name="address" type="text" /> */}
                                 <select defaultValue={modalCustomer.address} onChange={onModalInputChange} name="address" className="form-control mt-1" required>
                                     <option>--SELECT--</option>
                                     {read_location.data.location_master.map(location => (
-                                        <option key={location.id} value={location.id}>{location.taluka}</option>
+                                        <option key={location.id} value={location.id}>Country-{location.countryByCountry.name},State-{location.stateByState.name},City-{location.cityByCity.name},District-{location.district},Taluka-{location.taluka}</option>
                                     ))}
                                 </select>
                             </div>
-                            <div className="field">
+                            <div className="field col-md-6">
                                 <label className="required">Contact Person</label>
                                 <input defaultValue={modalCustomer.contact_person} onChange={onModalInputChange} className="form-control mt-1" name="contact_person" type="text" required  pattern="[a-zA-Z]*" title="Please enter Alphabets."/>
                             </div>
-                            <div className="field">
+                            </div>
+                            <div className="row">
+                            <div className="field col-md-6">
                                 <label className="required">Mobile Number</label>
                                 <input defaultValue={modalCustomer.mobile_no} onChange={onModalInputChange} className="form-control mt-1" name="mobile_no" type="tel" required  pattern="[789][0-9]{9}" title="Please enter valid mobile no"/>
                             </div>
-                            <div className="field">
+                            <div className="field col-md-6">
                                 <label className="required">Email ID</label>
                                 <input defaultValue={modalCustomer.email_id} onChange={onModalInputChange} className="form-control mt-1" name="email_id" type="email" pattern="^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$" title="Please enter valid email address" required />
                             </div>
-                            <div className="field">
+                            </div>
+                            <div className="row">
+                            <div className="field col-md-6">
                                 <label className="required">GST Number</label>
                                 <input defaultValue={modalCustomer.gst_no} onChange={onModalInputChange} className="form-control mt-1" name="gst_no" pattern="^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z]{1}[1-9A-Z]{1}Z[0-9A-Z]{1}$" title="Please enter valid gstin" type="text" required />
                             </div>
-                            <div className="field">
+                            <div className="field col-md-6">
                                 <label className="required">PAN Number</label>
                                 <input defaultValue={modalCustomer.pan} onChange={onModalInputChange} className="form-control mt-1" pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}" title="Please enter valid pan" name="pan" type="text" required />
+                            </div>
                             </div><br />
                             <div className="field">
                                 <button className="btn btn-primary">Save</button>
                             </div>
                         </form>
-                    </div>
+                    
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleClose}>
@@ -294,7 +302,7 @@ export default function Customer_Master() {
                             <select onChange={onInputChange} type="text" name="address" className="form-control mt-1" placeholder="enter address" required>
                                 <option>--SELECT--</option>
                                 {read_location.data.location_master.map(location => (
-                                    <option key={location.id} value={location.id}>{location.taluka}</option>
+                                    <option key={location.id} value={location.id}>Country-{location.countryByCountry.name},State-{location.stateByState.name},City-{location.cityByCity.name},District-{location.district},Taluka-{location.taluka}</option>
                                 ))}
                             </select>
                         </div>

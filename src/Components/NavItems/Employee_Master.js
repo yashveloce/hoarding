@@ -242,7 +242,7 @@ export default function Employee_Master() {
                             </div>
                             <div className="field col-md-6">
                                 <label className="required">Contact Number</label>
-                                <input defaultValue={modalEmployee.contact_no} onChange={onModalInputChange} className="form-control mt-1" name="contact_no" type="tel" placeholder="enter contact no" pattern="[789][0-9]{9}" title="Please enter valid mobile no" />
+                                <input defaultValue={modalEmployee.contact_no} onChange={onModalInputChange} className="form-control mt-1" name="contact_no" type="tel" placeholder="enter contact number" pattern="[789][0-9]{9}" title="Please enter valid mobile no" />
                             </div>
                         </div>
                         <div className="row">
