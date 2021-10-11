@@ -238,15 +238,15 @@ export default function GST_Type_Master() {
                                     <div className="row mt-3" >
                                         <div className="field col-md-4">
                                             <label>CGST</label>
-                                            <input className="form-control" name="cgst" type="number" onChange={onInputChange} required />
+                                            <input className="form-control mt-1" name="cgst" type="number" onChange={onInputChange} required />
                                         </div>
                                         <div className="field col-md-4">
                                             <label>SGST</label>
-                                            <input className="form-control" name="sgst" type="number" onChange={onInputChange} required />
+                                            <input className="form-control mt-1" name="sgst" type="number" onChange={onInputChange} required />
                                         </div>
                                         <div className="field col-md-4">
                                             <label>IGST</label>
-                                            <input className="form-control" name="igst" type="number" onChange={onInputChange} required />
+                                            <input className="form-control mt-1" name="igst" type="number" onChange={onInputChange} required />
                                         </div>
                                     </div>
                                     <div className="field" style={{ width: '100%', textAlign: 'center', marginTop: '20px' }}>

@@ -282,27 +282,27 @@ export default function Employee_Master() {
                 <h4 className="text-center">EMPLOYEE MASTER</h4>
 
                 <form onSubmit={onFormSubmit} className="form-group" padding="2px">
-                    <div className="row">
+                    <div className="row mt-3">
                         <div className="field col-md-6">
                             <label>Name</label>
-                            <input type="text" name="name" onChange={onInputChange} className="form-control" required placeholder="enter name" />
+                            <input type="text" name="name" onChange={onInputChange} className="form-control mt-1" required placeholder="enter name" />
                         </div>
                         <div className="field col-md-6">
                             <label>Address</label>
-                            <input type="text" name="address" onChange={onInputChange} className="form-control" placeholder="enter address"  required />
+                            <input type="text" name="address" onChange={onInputChange} className="form-control mt-1" placeholder="enter address"  required />
                         </div>
                     </div>
-                    <div className="row">
+                    <div className="row mt-3">
                         <div className="field col-md-6">
                             <label>Contact No</label>
-                            <input type="number" name="contact_no" onChange={onInputChange} className="form-control" placeholder="enter contact no" required />
+                            <input type="number" name="contact_no" onChange={onInputChange} className="form-control mt-1" placeholder="enter contact no" required />
                         </div>
                         <div className="field col-md-6">
                             <label>Email Id</label>
-                            <input type="email" name="email_id" onChange={onInputChange} className="form-control" placeholder="enter email id" required />
+                            <input type="email" name="email_id" onChange={onInputChange} className="form-control mt-1" placeholder="enter email id" required />
                         </div>
                     </div>
-                    <div className="row">
+                    <div className="row mt-3">
                         <div className="field col-md-6">
                             <label>Bank Name</label>
                             {/* <select name="bank_id" className="form-select" onChange={onInputChange} placeholder="enter bank details" required>
@@ -311,20 +311,23 @@ export default function Employee_Master() {
                                     <option value={bank.id} key={bank.id}>{bank.bank_name}</option>
                                 ))}
                             </select> */}
-                            <input type="text" name="bank_name" onChange={onInputChange} className="form-control" placeholder="enter bank name" required />
+                            <input type="text" name="bank_name" onChange={onInputChange} className="form-control mt-1" placeholder="enter bank name" required />
                         </div>
                         <div className="field col-md-6">
                             <label>Branch Name</label>
-                            <input type="text" name="branch_name" onChange={onInputChange} className="form-control" placeholder="enter branch name" required />
+                            <input type="text" name="branch_name" onChange={onInputChange} className="form-control mt-1" placeholder="enter branch name" required />
                         </div>
+                        <div className="row mt-3">
                         <div className="field col-md-6">
                             <label>IFSC Code</label>
-                            <input type="text" name="ifsc_code" onChange={onInputChange} className="form-control" placeholder="enter ifsc code" required />
+                            <input type="text" name="ifsc_code" onChange={onInputChange} class="validate" maxlength="11" minlength="11" className="form-control mt-1" placeholder="enter ifsc code" required />
                         </div>
                         <div className="field col-md-6">
                             <label>Account No</label>
-                            <input type="text" name="account_no" onChange={onInputChange} className="form-control" placeholder="enter account no" required />
+                            
+                        <input type="text" name="account_no" onChange={onInputChange} className="form-control mt-1" placeholder="enter account no" required />
                         </div>
+                    </div>
                     </div>
                     <div className="field" style={{ width: '100%', textAlign: 'center', marginTop: '20px' }}>
                         <button className="btn btn-primary" type='submit' style={{ marginRight: '50px' }}>Save</button>

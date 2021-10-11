@@ -211,16 +211,16 @@ export default function Franchise_Management() {
           <div className="row mt-4">
             <div className="field col-md-4">
               <label>Width (In Feet)</label>
-              <input placeholder="enter width" className="form-control" name="width" type="number" />
+              <input placeholder="enter width" className="form-control mt-1" name="width" type="number" />
             </div>
 
             <div className="field col-md-4">
               <label>Height (In Feet)</label>
-              <input placeholder="enter height" className="form-control" name="height" type="number" />
+              <input placeholder="enter height" className="form-control mt-1" name="height" type="number" />
             </div>
             <div className="field col-md-4">
               <label>Number of Display</label>
-              <input placeholder="enter no of display" className="form-control" name="no_of_display" type="number" />
+              <input placeholder="enter no of display" className="form-control mt-1" name="no_of_display" type="number" />
             </div>
           </div>
 

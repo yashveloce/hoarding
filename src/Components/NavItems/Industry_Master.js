@@ -234,7 +234,7 @@ function Industry_Master() {
 
 
 
-                    <div className="field" style={{ width: '100%', textAlign: 'center', marginTop: '20px' }}>
+                    <div className="field" style={{ width: '100%', textAlign: 'center', marginTop: '32px' }}>
                         <button className="btn btn-primary" type='submit' style={{ marginRight: '50px' }}>Save</button>
                         <button className="btn btn-primary" type='reset'>Reset</button>
                         {/* <button className="btn btn-primary" type='Next' style={{marginLeft:'5%'}}>Next</button> */}

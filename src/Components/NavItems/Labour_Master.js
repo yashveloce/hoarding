@@ -192,7 +192,7 @@ export default function Labour_Master() {
         },
         {
             field: 'gst_no',
-            headerName: 'GST No',
+            headerName: 'GST Number',
             width: 190,
             editable: false,
         },
@@ -231,7 +231,7 @@ export default function Labour_Master() {
         },
         {
             field: 'account_no',
-            headerName: 'Account No',
+            headerName: 'Account Number',
             width: 190,
             valueGetter: (params) => {
                 return params.row.bank_master.account_no;
@@ -380,8 +380,8 @@ export default function Labour_Master() {
                                     </div>
                                     <div className="row mt-3">
                                         <div className="field col-md-4">
-                                            <label>GST</label>
-                                            <input className="form-control" name="gst_no" type="text"placeholder="enter gst"  onChange={onInputChange} required />
+                                            <label>GST Number</label>
+                                            <input className="form-control" name="gst_no" type="text"placeholder="enter gst number"  onChange={onInputChange} required />
                                         </div>
                                         {/* <div className="field col-md-6">
                                         <label>Enter OTP</label>

@@ -301,7 +301,7 @@ export default function Location_Master() {
                     <div className="row">
                         <div className="field col-md-6">
                             <label>Country</label>
-                            <select onChange={onCountryChange} name="country" className="form-select " aria-label="Default select example" required>
+                            <select onChange={onCountryChange} name="country" className="form-select mt-1" aria-label="Default select example" required>
                                 <option>--SELECT--</option>
                                 {country.data.countries.map(country => (
                                     <option key={country.id} value={country.id}>{country.name}</option>
@@ -311,7 +311,7 @@ export default function Location_Master() {
 
                         <div className="field col-md-6">
                             <label>State</label>
-                            <select onChange={onStateChange} name="state" className="form-select " aria-label="Default select example" required>
+                            <select onChange={onStateChange} name="state" className="form-select mt-1" aria-label="Default select example" required>
                                 <option>--SELECT--</option>
                                 {selectedState === undefined ? '' : selectedState.map(state => (
                                     <option key={state.id} value={state.id}>{state.name}</option>
@@ -323,7 +323,7 @@ export default function Location_Master() {
                     <div className="row mt-3">
                         <div className="field col-md-6 ">
                             <label>City</label>
-                            <select className="form-select" name="city" aria-label="Default select example" required>
+                            <select className="form-select mt-1" name="city" aria-label="Default select example" required>
                                 <option>--SELECT--</option>
                                 {selectedCity === undefined ? '' : selectedCity.map(city => (
                                     <option key={city.id} value={city.id}>{city.name}</option>
@@ -335,11 +335,11 @@ export default function Location_Master() {
                     <div className="row mt-3">
                         <div className="field col-md-6 ">
                             <label>District</label>
-                            <input onChange={(e) => { setSelectedDistrict(e.target.value) }} type="text" name="district" className="form-control" placeholder="enter district" required />
+                            <input onChange={(e) => { setSelectedDistrict(e.target.value) }} type="text" name="district" className="form-control mt-1" placeholder="enter district" required />
                         </div>
                         <div className="field col-md-6">
                             <label>Taluka</label>
-                            <input onChange={(e) => { setSelectedTaluka(e.target.value) }} type="text" name="taluka" className="form-control" placeholder="enter taluka" required />
+                            <input onChange={(e) => { setSelectedTaluka(e.target.value) }} type="text" name="taluka" className="form-control mt-1" placeholder="enter taluka" required />
                         </div>
                     </div>
                     <div className="field" style={{ width: '100%', textAlign: 'center', marginTop: '20px' }}>
